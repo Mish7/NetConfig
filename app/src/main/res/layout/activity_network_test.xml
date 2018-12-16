@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="151dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:checked="false"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="8sp"
+        android:text="IPv6"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="275dp"
+        android:layout_height="146dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="This function helps identify incoming network on a device. The switch is set to on if netwok has IPv6 configuration else it remains off and gives an appropriate notification."
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/butt3"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:text="check" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+
+    <Button
+        android:id="@+id/butt2"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="158dp"
+        android:text="Get Started" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="232dp"
+        android:layout_height="97dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="173dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="This application has a two step function - It detects IPv6 network interface support and it checks for current resolution using different APIs."
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="119dp"
+        android:text="App Information:"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
