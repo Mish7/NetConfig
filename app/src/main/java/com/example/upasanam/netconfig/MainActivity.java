@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+//Uses different APIs for calculating resolution of a device to validate against the Settings on the device
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     protected TextView textView,textView2,textView3;
     protected Button b1,b2,b3;
@@ -52,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
+    //Using getSize API to get the screen resolution - Provides the entire application display area for an app opened in full screen mode
     private String getScreenResolution() {
 
         try {
@@ -68,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return "{" + width + "," + height + "}";
     }
 
+    //Using getRealSize API to get the screen resolution - Provides the complete display area including the screen decorations
     private String getScreenResolution2()
     {
         try {
@@ -84,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return "{" + width + "," + height + "}";
     }
 
+    //Using screenWidth&HeightDp to calculate the screen resolution in display pixels
     private String getScreenResolution3()
     {
         width=getResources().getConfiguration().screenWidthDp;

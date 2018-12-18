@@ -4,31 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.upasanam.TestConfig.Intermediate">
+    tools:context=".Intermediate">
 
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="187dp"
         android:layout_height="115dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView8"
-        android:layout_marginTop="215dp">
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="208dp">
 
         <RadioButton
             android:id="@+id/rd"
             android:layout_width="match_parent"
             android:layout_height="54dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:text="Resolution Check" />
+            android:text="@string/resolution_check" />
 
         <RadioButton
             android:id="@+id/rd2"
             android:layout_width="match_parent"
             android:layout_height="61dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/rd"
-            android:text="IPv6 Check" />
+            android:text="@string/ipv6_check" />
 
     </RadioGroup>
 
@@ -39,9 +36,18 @@
         android:layout_height="29dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="72dp"
-        android:text="Select one of the options below to test"
+        android:layout_marginTop="107dp"
+        android:text="Select one of the options below to test:"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/colorButtonNormal"
+        android:text="SIGN OUT" />
 
 </RelativeLayout>

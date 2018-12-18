@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+//This activity handles the welcome screen - The initial screen that provides app information and redirects to the Login screen
 public class Welcome extends AppCompatActivity {
     protected Button button,button2;
     @Override
@@ -17,7 +18,7 @@ public class Welcome extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Welcome.this, Intermediate.class));
+                startActivity(new Intent(Welcome.this, Login.class));
             }
         });
     }

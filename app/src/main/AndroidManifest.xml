@@ -26,9 +26,17 @@
         <activity
             android:name=".NetworkTest"
             android:screenOrientation="portrait" />
-        <activity android:name=".Intermediate"
-            android:screenOrientation="portrait"></activity>
-    </application>
+        <activity
+            android:name=".Intermediate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
 
 </manifest>
